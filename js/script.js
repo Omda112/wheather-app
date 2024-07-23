@@ -17,7 +17,7 @@ searchLocation.addEventListener("keyup" , function(e){
 async function getwheather(country) {
     console.log(country)
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=b8688b122a854018a2605622240807&q=${country}&days=6`)
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b8688b122a854018a2605622240807&q=${country}&days=6`)
         let finalresponse = await response.json()
         displayWeatherData(finalresponse)
         console.log(finalresponse)
